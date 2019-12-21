@@ -1,0 +1,55 @@
+﻿<Window x:Class="Netio_Sample_WPF.wdSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Netio_Sample_WPF"
+        mc:Ignorable="d"
+        Title="wdSettings" Height="320" Width="500" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="1" Grid.Row="1" Content="Settings Netio" />
+        <Label Grid.Column="1" Grid.Row="3" Content="Address Netio 1" />
+        <Label Grid.Column="1" Grid.Row="5" Content="User Name Netio 1" />
+        <Label Grid.Column="1" Grid.Row="7" Content="Password Netio 1" />
+        <Label Grid.Column="1" Grid.Row="9" Content="Address Netio 2" />
+        <Label Grid.Column="1" Grid.Row="11" Content="User Name Netio 2" />
+        <Label Grid.Column="1" Grid.Row="13" Content="Password Netio 2" />
+        <TextBox Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="3" Name="txtAddressNetio1" Margin="5" />
+        <TextBox Grid.Column="3" Grid.Row="5" Grid.ColumnSpan="3" Name="txtUserNameNetio1" Margin="5" />
+        <TextBox Grid.Column="3" Grid.Row="7" Grid.ColumnSpan="3" Name="txtPasswordNetio1" Margin="5" />
+        <TextBox Grid.Column="3" Grid.Row="9" Grid.ColumnSpan="3" Name="txtAddressNetio2" Margin="5" />
+        <TextBox Grid.Column="3" Grid.Row="11" Grid.ColumnSpan="3" Name="txtUserNameNetio2" Margin="5" />
+        <TextBox Grid.Column="3" Grid.Row="13" Grid.ColumnSpan="3" Name="txtPasswordNetio2" Margin="5" />
+        <Button Grid.Column="5" Grid.Row="15" Width="100" Height="25" Content="Save" Click="Button_Click"></Button>
+    </Grid>
+</Window>
